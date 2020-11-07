@@ -46,11 +46,11 @@ const Login = () => {
                 <Header></Header>
             </div>
 
-            <div class="card text-center" style={{width: '500px',height:'150px', marginLeft:'450px', marginTop:'150px', borderRadius:'5px'}}>
-                <div class="card-body">
+            <div class="card text-center" style={{width: '500px',height:'300px', marginLeft:'450px', marginTop:'120px', borderRadius:'10px', boxShadow:'8px 8px 8px gray'}}>
+                <div class="card-body" style={{marginTop:'70px'}}>
                     <h5 class="card-title">Login With</h5>
-                    <button style={{width:'300px', height:'30px', borderRadius:'10px', fontWeight:'450'}} onClick={handleGoogleSignIn}>
-                         <img style={{width:'20px', marginRight:'100px'}} src={logos2} alt=""/> <span style={{marginRight:'5px'}}>Continue With Google</span> 
+                    <button style={{width:'300px', height:'40px', borderRadius:'20px', fontWeight:'450', backgroundColor:'white'}} onClick={handleGoogleSignIn}>
+                         <img style={{width:'20px', height:'30px', marginRight:'100px'}} src={logos2} alt=""/> <span style={{marginRight:'5px'}}>Continue With Google</span> 
                     </button>
                     
                     <p class="card-text">Don't have any account? <a href="#">Create an account</a></p>

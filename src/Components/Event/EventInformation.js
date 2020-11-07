@@ -5,7 +5,7 @@ const EventInformation = (props) => {
     const { organization, date, _id } = props.registrationData;
     const handleDeleteActivity = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/deleteActivity/${id}`, {
+        fetch(`https://protected-refuge-94692.herokuapp.com/deleteActivity/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 const Admin = () => {
     //console.log(fakeData);
     // const handleFakeData = () => {
-    //     //    fetch('http://localhost:5000/addVolunteerActivity', {
+    //     //    fetch('https://protected-refuge-94692.herokuapp.com/addVolunteerActivity', {
     //     //        method:'POST',
     //     //        headers:{'Content-Type': 'application/json'},
     //     //        body: JSON.stringify(fakeData)
@@ -17,10 +17,11 @@ const Admin = () => {
     // }
     const [allVolunteerData, setAllVolunteerData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/getAllRegisterData')
+
+        fetch('https://protected-refuge-94692.herokuapp.com/getAllRegisterData')
             .then(res => res.json())
             .then(data => setAllVolunteerData(data))
-    })
+    }, [])
 
     return (
         <div className="home-image">
@@ -40,14 +41,16 @@ const Admin = () => {
                     </tr>
                 </thead>
                 <tbody>
+                {
+                    allVolunteerData.map(volunteerData => 
                     <tr>
-                        
-                        <td>{allVolunteerData.name}</td>
-                        <td>{allVolunteerData.email}</td>
-                        <td>{allVolunteerData.date}</td>
-                        <td>{allVolunteerData.organization}</td>
+                      
+                        <td>{volunteerData.name}</td>
+                        <td>{volunteerData.email}</td>
+                        <td>{volunteerData.date}</td>
+                        <td>{volunteerData.organization}</td>
                     </tr>
-                    
+                )}
                    
                 </tbody>
             </table>

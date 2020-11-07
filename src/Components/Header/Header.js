@@ -21,10 +21,10 @@ const Header = () => {
              </Navbar.Brand >   
                    
                 <Nav className="header" >
-                 <Link to="/home">  <Nav.Link style={{marginLeft:'270px', color:'black'}}  href="#home">Home</Nav.Link></Link> 
-                 <Link to="/donation">   <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#donation">Donation</Nav.Link> </Link> 
-                <Link to="/event">   <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#events">Events</Nav.Link></Link> 
-                 <Link to="/blog">  <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#blog">Blog</Nav.Link></Link> 
+                <Link to="home"><Nav.Link style={{marginLeft:'270px', color:'black'}}  href="#home">Home</Nav.Link></Link> 
+                <Link to="donation">   <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#donation">Donation</Nav.Link> </Link> 
+                <Link to="events">  <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#events">Events</Nav.Link></Link> 
+                <Link to="blog">   <Nav.Link style={{marginLeft:'20px', color:'black'}}  href="#blog">Blog</Nav.Link></Link> 
                
                 <Link to="/login"> 
 

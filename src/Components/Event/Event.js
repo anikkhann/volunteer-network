@@ -9,7 +9,7 @@ const Event = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [getRegistrationData, setGetRegistrationData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/getRegisterData?email='+loggedInUser.email)
+        fetch('https://protected-refuge-94692.herokuapp.com/getRegisterData?email='+loggedInUser.email)
            
         .then(res => res.json())
         .then(data => setGetRegistrationData(data))

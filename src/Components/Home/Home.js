@@ -10,7 +10,7 @@ const Home = () => {
     const [volunteerActivity, setVolunteerActivity] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:5000/loadVolunteerActivity')
+        fetch('https://protected-refuge-94692.herokuapp.com/loadVolunteerActivity')
             .then(res => res.json())
             .then(data => setVolunteerActivity(data))
 
