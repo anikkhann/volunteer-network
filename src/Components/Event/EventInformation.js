@@ -1,4 +1,3 @@
-
 import React from 'react';
 import logos from '../../logos/extraVolunteer.png'
 const EventInformation = (props) => {
@@ -18,11 +17,11 @@ const EventInformation = (props) => {
 
 
         <div className="container mt-5">
-        <div className="row">
+        <div className="row ">
            
-                    <div className="col-md-6">
-                        <div className="card mb-3" style={{ maxWidth: "540px" }}>
-                            <div className="row no-gutters">
+                    <div className="col-md-12 d-flex justify-content-center">
+                        <div className="card  mb-3" style={{ maxWidth: "700px" }}>
+                            <div className="row no-gutters ">
                                 <div className="col-md-4 p-2">
                                     <img src={logos} className="card-img" alt="..." />
                                 </div>
